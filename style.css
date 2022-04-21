@@ -1,41 +1,29 @@
-body{color:#6BD9EE;font-family:"helvetica";font-size:18px;}
-#logo{height:30px;width:45px;position:absolute;overflow:hidden;}
-#animado{background:url(logo.png) no-repeat;height:690px;width:45px;}
-
-#animado:hover{
-	-webkit-animation-name:logo;
-	-webkit-animation-duration:4s;
-  -webkit-animation-iteration-count:1;
-  -webkit-animation-timing-function:linear;
-  -webkit-animation-fill-mode: forwards;
-	position:relative;
+:root{
+--bg_color_header: #64ffda;
+--titulo: #9effff;
 }
-
-h1:active{
-	-webkit-animation-name:ah1; 
-  -webkit-animation-duration:5s; 
-  -webkit-animation-iteration-count:1;
-  -webkit-animation-timing-function:linear;
-  -webkit-animation-fill-mode: forwards;
-  position:relative;
- }
-
-@-webkit-keyframes logo{
-  0% {
-    -webkit-transform:translateY(0px);
-  }
-  100% {
-    -webkit-transform:translateY(-660px);
-  }
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
-
-@-webkit-keyframes ah1{
-  from {
-    left:0;
-  }
-
-  to {
-    left:100%;
-  }
-
+h1,h2,h3,p,a,div{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-color: var(--bg_color_header); 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items:flex-end;
+  justify-items: flex-start;
+}
+.header h1{
+  color: var(--blanco);
+  font-family: 'Dosis', sans-serif;
+  font-weight: 200;
+  font-size: 5rem;
+  margin-inline-start: 60px;
+  margin-block-end: 100px;
 }
